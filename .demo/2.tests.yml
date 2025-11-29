@@ -8,7 +8,7 @@ demos:
       - action: openCopilotChat
       - action: agentCopilotChat
       - action: typeText
-        content: Can you create me E2E tests for the `apps/website` which is available at `http://localhost:5173`. These tests need to created within the `e2e/tests/sticker-inventory.spec.ts` test file and created with Playwright. use context7
+        content: Can you create me E2E tests for the `apps/website` which is available at `http://localhost:5173`. These tests need to created within the `tests/sticker-inventory.spec.ts` test file and created with Playwright. use context7
         insertTypingSpeed: 5
   - id: demo-mikd9ki9-ejhy
     title: context7?
@@ -19,30 +19,30 @@ demos:
     description: ''
     steps:
       - action: create
-        path: e2e/tests/sticker-inventory.spec.ts
+        path: tests/sticker-inventory.spec.ts
         contentPath: .demo/snapshots/ai-tests.ts
       - action: highlight
-        path: /e2e/tests/sticker-inventory.spec.ts
+        path: /tests/sticker-inventory.spec.ts
         position: '11:24'
         highlightWholeLine: true
   - title: 'Test: should show grid'
     description: ''
     steps:
       - action: highlight
-        path: /e2e/tests/sticker-inventory.spec.ts
+        path: /tests/sticker-inventory.spec.ts
         position: '26:35'
         highlightWholeLine: true
   - title: 'Test: should filter'
     description: ''
     steps:
       - action: highlight
-        path: /e2e/tests/sticker-inventory.spec.ts
+        path: /tests/sticker-inventory.spec.ts
         position: '37:56'
   - title: 'Test: no matches'
     description: ''
     steps:
       - action: highlight
-        path: /e2e/tests/sticker-inventory.spec.ts
+        path: /tests/sticker-inventory.spec.ts
         position: '58:75'
 engageTime:
   sessionId: kbsg6v

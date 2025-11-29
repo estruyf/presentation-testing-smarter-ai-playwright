@@ -1,7 +1,7 @@
-Index: /e2e/tests/sticker-inventory.spec.ts
+Index: /tests/sticker-inventory.spec.ts
 ===================================================================
---- /e2e/tests/sticker-inventory.spec.ts
-+++ /e2e/tests/sticker-inventory.spec.ts
+--- /tests/sticker-inventory.spec.ts
++++ /tests/sticker-inventory.spec.ts
 @@ -86,5 +86,49 @@
      // Check hover description (might need hover action)
      await firstSticker.hover();

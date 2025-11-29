@@ -8,4 +8,4 @@ Please add all the retrieved an created test IDs in a TypeScript constant file u
 
 ## Create me E2E tests
 
-Can you create me E2E tests for the `apps/website` which is available at `http://localhost:5173`. These tests need to created within the `e2e/tests` folder and created with Playwright. use context7
+Can you create me E2E tests for the `apps/website` which is available at `http://localhost:5173`. These tests need to created within the `tests` folder and created with Playwright. use context7

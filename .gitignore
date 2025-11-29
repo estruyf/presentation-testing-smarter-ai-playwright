@@ -9,3 +9,11 @@ specs/*
 test-results/.last-run.json
 .github/workflows/copilot-setup-steps.yml
 sticker-inventory-test-plan.md
+
+# Playwright
+node_modules/
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/
+/playwright/.auth/

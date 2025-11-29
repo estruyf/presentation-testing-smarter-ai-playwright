@@ -39,7 +39,7 @@ demos:
         timeout: 3000
       - action: executeTerminalCommand
         terminalId: copy-tests
-        command: cp -r .demo/snapshots/all-tests/* e2e/tests/
+        command: cp -r .demo/snapshots/all-tests/* tests/
         insertTypingMode: character-by-character
         insertTypingSpeed: 5
   - id: demo-mikjhc4x-dki3
@@ -48,17 +48,17 @@ demos:
       - action: closeTerminal
         terminalId: copy-tests
       - action: open
-        path: e2e/tests/inventory/initial-load.spec.ts
+        path: tests/inventory/initial-load.spec.ts
   - id: demo-mikjiha3-endq
     title: Accessibility
     steps:
       - action: open
-        path: e2e/tests/accessibility/a11y-compliance.spec.ts
+        path: tests/accessibility/a11y-compliance.spec.ts
   - id: demo-mikjj185-epfe
     title: Error handling
     steps:
       - action: open
-        path: e2e/tests/api/error-handling.spec.ts
+        path: tests/api/error-handling.spec.ts
   - id: demo-mikjjmph-p5mw
     title: Does it work?
     steps:

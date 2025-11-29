@@ -1,5 +1,5 @@
 // spec: sticker-inventory-test-plan.md
-// seed: e2e/tests/seed.spec.ts
+// seed: /tests/seed.spec.ts
 
 import { test, expect } from "@playwright/test";
 import { TEST_IDS } from "../../constants/testIds";
