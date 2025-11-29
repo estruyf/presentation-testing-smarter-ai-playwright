@@ -45,3 +45,28 @@ demos:
     steps:
       - action: openSlide
         path: .demo/slides/mcp-testing.md
+  - id: demo-mikgjzq5-zgb4
+    title: Create agents
+    steps:
+      - action: openTerminal
+      - action: waitForTimeout
+        timeout: 3000
+      - action: executeTerminalCommand
+        command: npx playwright init-agents --loop=vscode
+        insertTypingSpeed: 10
+        insertTypingMode: character-by-character
+  - id: demo-mikgnty3-4jku
+    title: Planner
+    steps:
+      - action: open
+        path: .github/agents/playwright-test-planner.agent.md
+  - id: demo-mikgo3bu-z090
+    title: Generator
+    steps:
+      - action: open
+        path: .github/agents/playwright-test-generator.agent.md
+  - id: demo-mikgo2w0-h178
+    title: Healer
+    steps:
+      - action: open
+        path: .github/agents/playwright-test-healer.agent.md

@@ -1,1 +1,9 @@
 .DS_Store
+
+.github/agents/playwright-test-generator.agent.md
+.github/agents/playwright-test-healer.agent.md
+.github/agents/playwright-test-planner.agent.md
+seed.spec.ts
+specs/README.md
+test-results/.last-run.json
+.github/workflows/copilot-setup-steps.yml
