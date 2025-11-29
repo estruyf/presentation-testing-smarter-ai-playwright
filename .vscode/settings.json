@@ -1,0 +1,7 @@
+{
+  "demoTime.defaultFileType": "yaml",
+  "demoTime.customTheme": ".demo/theme/espc25.css",
+  "[markdown]": {
+    "editor.formatOnSave": false
+  }
+}

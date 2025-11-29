@@ -1,0 +1,14 @@
+title: ESPC25 Template
+description: ''
+version: 2
+demos:
+  - id: demo-mhenz61y-4vni
+    title: Dark template
+    steps:
+      - action: openSlide
+        path: .demo/slides/template.md
+  - id: demo-mhes48we-v45u
+    title: Light template
+    steps:
+      - action: openSlide
+        path: .demo/slides/template-light.md
