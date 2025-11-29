@@ -1,0 +1,26 @@
+title: Preparations
+version: 2
+engageTime:
+  sessionId: kbsg6v
+demos:
+  - id: demo-mgt4o0us-6pe3
+    title: Prepare
+    steps:
+      - action: backupSettings
+      - action: executeScript
+        command: osascript
+        path: .demo/scripts/hide.menubar.scpt
+        id: hide-menubar
+      - action: executeScript
+        command: osascript
+        path: .demo/scripts/focus.mode.on.scpt
+        id: focus-mode-on
+      - action: setSetting
+        setting:
+          key: editor.fontSize
+          value: 20
+      - action: setSetting
+        setting:
+          key: terminal.integrated.fontSize
+          value: 20
+      - action: startEngageTimeSession

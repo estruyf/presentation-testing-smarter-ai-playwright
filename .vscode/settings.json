@@ -3,5 +3,8 @@
   "demoTime.customTheme": ".demo/theme/espc25.css",
   "[markdown]": {
     "editor.formatOnSave": false
-  }
+  },
+  "workbench.statusBar.visible": true,
+  "workbench.editor.showTabs": "multiple",
+  "workbench.activityBar.location": "default"
 }

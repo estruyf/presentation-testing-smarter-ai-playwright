@@ -1,37 +1,5 @@
-# ESPC25 Presentation Template for Demo Time
+# ESPC25 - Testing smarter: Bringing AI into your E2E testing workflows
 
-This repository contains a presentation template specifically designed for Demo Time sessions at ESPC25. The template is derived from the official ESPC25 presentation template, with modifications to suit the unique requirements of [Demo Time](https://demotime.show/) presentations.
+End-to-end testing with Playwright is something I use daily to ensure websites and tools are fully covered. But maintaining these tests can be time-consuming, especially in rapidly changing environments. What if AI could help you test smarter? In this session, we’ll explore how AI tools and MCP servers can assist in generating comprehensive Playwright test cases, analyzing failed runs, summarizing logs, and maintaining stable E2E tests. You’ll see how to combine pre-authenticated sessions, and AI-powered diagnostics to create a more resilient testing setup that ensures full coverage of your applications. Based on real-world automation scenarios, this talk will help you modernize your Playwright testing workflows and reduce maintenance while increasing confidence that every feature works as expected.
 
-![ESPC25 Demo Time Template](assets/title-sample.png)
-
-## Slides
-
-All the [slide layouts](https://demotime.show/slides/layouts/) from Demo Time are included in this template.
-
-There is also a custom slide layout for the title slide and it can be used as follows:
-
-```markdown
----
-customLayout: .demo/layout/title.html
-image: .demo/assets/background.webp
-# Change the following metadata values
-title: PRESENTATION TITLE GOES HERE
-name: YOUR NAME
-meta: TITLE, COMPANY NAME, COUNTRY
-profileImg: .demo/assets/profile.png
----
-
-```
-
-## Theme colors
-
-To use the theme, you need to set the `theme` metadata value to either `espc` or `espc light` at the beginning of your markdown file, like so:
-
-```markdown
----
-theme: espc light
----
-```
-
-> [!CAUTION]
-> You are not able to mix dark and light slides in the same markdown slide group. If you want to use both dark and light slides, you need to create separate markdown slide groups for each. An example can be found in the [dark template](.demo/slides/template.md) and [light template](.demo/slides/template-light.md).
+> Template: https://github.com/estruyf/presentation-m365-playwright-github-actions

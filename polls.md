@@ -1,0 +1,3 @@
+- Who is already doing E2E testing with Playwright?
+- Who has used AI tools (like ChatGPT) for coding or testing tasks?
+- Who does already use AI to create E2E tests?
