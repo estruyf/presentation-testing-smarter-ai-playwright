@@ -1,0 +1,32 @@
+title: AI Creation
+description: ''
+version: 2
+demos:
+  - id: demo-mikiuil2-ws7u
+    title: Create the plan
+    steps:
+      - action: openCopilotChat
+      - action: customCopilotChat
+        mode: playwright-test-planner
+      - action: typeText
+        content: Explore the `apps/website` app, and create a test plan for the basic inventory actions. Make sure to also include API tests and mock the APIs. Make sure to expect the unexpected like failing APIs.
+        insertTypingSpeed: 5
+      - action: pressEnter
+  - id: demo-mikivr21-n0jm
+    title: Open the plan
+    steps:
+      - action: create
+        path: sticker-inventory-test-plan.md
+        contentPath: .demo/snapshots/sticker-inventory-test-plan.md
+      - action: open
+        path: sticker-inventory-test-plan.md
+  - id: demo-mikixbzc-7grp
+    title: Generate the tests
+    steps:
+      - action: openCopilotChat
+      - action: customCopilotChat
+        mode: playwright-test-generator
+      - action: typeText
+        content: Generate me the tests for the sticker-inventory-test-plan.md test plan.
+        insertTypingSpeed: 5
+      - action: pressEnter

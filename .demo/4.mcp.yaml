@@ -58,15 +58,24 @@ demos:
   - id: demo-mikgnty3-4jku
     title: Planner
     steps:
+      - action: create
+        path: .github/agents/playwright-test-planner.agent.md
+        contentPath: .demo/snapshots/playwright-test-planner.agent.md
       - action: open
         path: .github/agents/playwright-test-planner.agent.md
   - id: demo-mikgo3bu-z090
     title: Generator
     steps:
+      - action: create
+        path: .github/agents/playwright-test-generator.agent.md
+        contentPath: .demo/snapshots/playwright-test-generator.agent.md
       - action: open
         path: .github/agents/playwright-test-generator.agent.md
   - id: demo-mikgo2w0-h178
     title: Healer
     steps:
+      - action: create
+        path: .github/agents/playwright-test-healer.agent.md
+        contentPath: .demo/snapshots/playwright-test-healer.agent.md
       - action: open
         path: .github/agents/playwright-test-healer.agent.md
