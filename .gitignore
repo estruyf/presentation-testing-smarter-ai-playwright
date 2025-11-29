@@ -5,6 +5,7 @@ node_modules
 .github/agents/playwright-test-healer.agent.md
 .github/agents/playwright-test-planner.agent.md
 seed.spec.ts
-specs/README.md
+specs/*
 test-results/.last-run.json
 .github/workflows/copilot-setup-steps.yml
+sticker-inventory-test-plan.md
