@@ -7,3 +7,8 @@ demos:
     steps:
       - action: openSlide
         path: .demo/slides/future.md
+  - id: demo-mh9f5y2q-jloq
+    title: Outro
+    steps:
+      - action: openSlide
+        path: .demo/slides/the-end.md

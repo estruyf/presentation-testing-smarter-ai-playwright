@@ -12,8 +12,3 @@ line2: "Demo Time"
 social1: "eliostruyf.com"
 social2: elio@struyfconsulting.be
 ---
-
----
-layout: image
-image: .demo/assets/rating.webp
----

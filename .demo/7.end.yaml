@@ -4,11 +4,11 @@ version: 2
 engageTime:
   sessionId: yysmtw
 demos:
-  - id: demo-mh9f5y2q-jloq
-    title: outro
+  - id: demo-mh9f5y2q-jloa
+    title: Rating
     steps:
       - action: openSlide
-        path: .demo/slides/the-end.md
+        path: .demo/slides/rating.md
   - id: demo-mh9fddvf-hnwr
     title: Restore settings
     steps:
