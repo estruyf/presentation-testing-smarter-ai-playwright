@@ -1,4 +1,5 @@
 .DS_Store
+node_modules
 
 .github/agents/playwright-test-generator.agent.md
 .github/agents/playwright-test-healer.agent.md
