@@ -1,0 +1,54 @@
+Index: /e2e/tests/sticker-inventory.spec.ts
+===================================================================
+--- /e2e/tests/sticker-inventory.spec.ts
++++ /e2e/tests/sticker-inventory.spec.ts
+@@ -86,5 +86,49 @@
+     // Check hover description (might need hover action)
+     await firstSticker.hover();
+     await expect(firstSticker.getByTestId(TEST_IDS.STICKER_INVENTORY.STICKER.DESCRIPTION)).toBeVisible();
+   });
++
++  test("should make correct API call on initial load", async ({ page }) => {
++    const requestPromise = page.waitForRequest(
++      request => request.url().includes("/api/stickers") && request.method() === "GET"
++    );
++    await page.goto(WEBSITE_URL);
++    const request = await requestPromise;
++    expect(request.url()).toContain("/api/stickers");
++    expect(request.method()).toBe("GET");
++  });
++
++  test("should make correct API call when filtering", async ({ page }) => {
++    await page.goto(WEBSITE_URL);
++    await expect(page.getByTestId(TEST_IDS.STICKER_INVENTORY.SPINNER)).not.toBeVisible();
++
++    const filterInput = page.getByTestId(TEST_IDS.STICKER_INVENTORY.FILTER.INPUT);
++    await filterInput.fill("20");
++
++    const requestPromise = page.waitForRequest(
++      request => request.url().includes("/api/stickers?min=20") && request.method() === "GET"
++    );
++    const filterButton = page.getByTestId(TEST_IDS.STICKER_INVENTORY.FILTER.BUTTON);
++    await filterButton.click();
++
++    const request = await requestPromise;
++    expect(request.url()).toContain("/api/stickers?min=20");
++    expect(request.method()).toBe("GET");
++  });
++
++  test("should handle API failure gracefully", async ({ page }) => {
++    await page.route("**/api/stickers**", async route => {
++      await route.fulfill({
++        status: 500,
++        contentType: "application/json",
++        body: JSON.stringify({ error: "Internal Server Error" }),
++      });
++    });
++
++    await page.goto(WEBSITE_URL);
++
++    // Wait for error to appear
++    await expect(page.getByTestId(TEST_IDS.STICKER_INVENTORY.ERROR)).toBeVisible();
++    await expect(page.getByText(/Error fetching stickers/)).toBeVisible();
++  });
+ });

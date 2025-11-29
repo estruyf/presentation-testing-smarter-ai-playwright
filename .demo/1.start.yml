@@ -1,0 +1,69 @@
+title: Start
+description: ''
+version: 2
+demos:
+  - id: demo-mikaacy0-ha7g
+    title: Intro
+    steps:
+      - action: setTheme
+        theme: Demo Time Dark (no italic)
+      - action: openSlide
+        path: .demo/slides/intro.md
+    icons:
+      start: device-desktop
+      end: ''
+  - id: demo-mikcbg1p-fusu
+    title: The app
+    steps:
+      - action: setTheme
+        theme: Demo Time Light (no italic)
+      - action: openTerminal
+        terminalId: local-server
+      - action: waitForTimeout
+        timeout: 3000
+      - action: executeTerminalCommand
+        command: cd apps/website && npm run dev
+        insertTypingMode: character-by-character
+        terminalId: local-server
+  - id: demo-mikcdjb2-s5l7
+    title: Show the app
+    steps:
+      - action: openWebsite
+        url: http://localhost:5173
+  - id: demo-mikcnn4s-vqx5
+    title: Start AI
+    steps:
+      - action: agentCopilotChat
+      - action: typeText
+        content: |-
+          Can you analyse the `apps/website` and check which components are important for end-to-end testing. Can you please add `data-testid` attributes to those components.
+
+          Please add all the retrieved an created test IDs in a TypeScript constant file under `apps/website/src/constants/testIds.ts`. That way, it is easier to be reused in the E2E tests later.
+        insertTypingSpeed: 5
+      - action: pressEnter
+  - id: demo-mikcqjhs-u9iv
+    title: Show test IDs
+    steps:
+      - action: closeCopilotChat
+      - action: open
+        path: apps/website/src/constants/testIds.ts
+  - title: Highlight navigation
+    description: ''
+    steps:
+      - action: highlight
+        path: /apps/website/src/App.tsx
+        position: '22:27'
+  - title: Highlight sticker
+    description: ''
+    steps:
+      - action: highlight
+        path: /apps/website/src/components/StickerOverview.tsx
+        position: '119:124'
+  - title: Highlight sticker elements
+    description: ''
+    steps:
+      - action: highlight
+        path: /apps/website/src/components/StickerOverview.tsx
+        position: '157:164'
+engageTime:
+  sessionId: kbsg6v

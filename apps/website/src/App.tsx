@@ -1,4 +1,5 @@
 import { StickerOverview } from './components/StickerOverview'
+import { TEST_IDS } from './constants/testIds'
 
 function App() {
   return (
@@ -10,14 +11,19 @@ function App() {
       <header className="bg-white shadow-sm sticky top-0 z-50">
         <div className="container mx-auto px-4 py-4 flex justify-between items-center">
           <div className="flex items-center space-x-2">
-            <img src="https://ik.imagekit.io/pyodstickers/img/pyod-white-nolaptop.png" alt="Pimp Your Own Device" className="h-12" />
+            <img
+              src="https://ik.imagekit.io/pyodstickers/img/pyod-white-nolaptop.png"
+              alt="Pimp Your Own Device"
+              className="h-12"
+              data-testid={TEST_IDS.APP.HEADER.LOGO}
+            />
           </div>
           <nav className="hidden md:block">
             <ul className="flex space-x-8 text-gray-800 font-bold uppercase text-sm tracking-wider">
-              <li><a href="#" className="hover:text-pink-600 transition-colors">Stickers</a></li>
-              <li><a href="#" className="hover:text-pink-600 transition-colors">News</a></li>
-              <li><a href="#" className="hover:text-pink-600 transition-colors">Our Mission</a></li>
-              <li><a href="#" className="hover:text-pink-600 transition-colors">Contact</a></li>
+              <li><a href="#" className="hover:text-pink-600 transition-colors" data-testid={TEST_IDS.APP.NAV.STICKERS}>Stickers</a></li>
+              <li><a href="#" className="hover:text-pink-600 transition-colors" data-testid={TEST_IDS.APP.NAV.NEWS}>News</a></li>
+              <li><a href="#" className="hover:text-pink-600 transition-colors" data-testid={TEST_IDS.APP.NAV.MISSION}>Our Mission</a></li>
+              <li><a href="#" className="hover:text-pink-600 transition-colors" data-testid={TEST_IDS.APP.NAV.CONTACT}>Contact</a></li>
             </ul>
           </nav>
         </div>
@@ -33,7 +39,10 @@ function App() {
             <p className="text-xl text-gray-300 max-w-2xl mx-auto mb-10 leading-relaxed">
               We provide you with unique dev and tech stickers to pimp up your own devices so that your laptop stands out.
             </p>
-            <button className="bg-pink-600 text-white font-bold py-3 px-8 rounded-full hover:bg-pink-700 transition-transform transform hover:scale-105 shadow-lg">
+            <button
+              className="bg-pink-600 text-white font-bold py-3 px-8 rounded-full hover:bg-pink-700 transition-transform transform hover:scale-105 shadow-lg"
+              data-testid={TEST_IDS.APP.HERO.BROWSE_BUTTON}
+            >
               Browse Collection
             </button>
           </div>
@@ -55,7 +64,13 @@ function App() {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
             <div className="col-span-1 md:col-span-2">
-              <img src="https://ik.imagekit.io/pyodstickers/img/pyod-white-nolaptop.png" alt="PYOD" className="h-10 mb-6" style={{ filter: "brightness(5)" }} />
+              <img
+                src="https://ik.imagekit.io/pyodstickers/img/pyod-white-nolaptop.png"
+                alt="PYOD"
+                className="h-10 mb-6"
+                style={{ filter: "brightness(5)" }}
+                data-testid={TEST_IDS.APP.FOOTER.LOGO}
+              />
               <p className="text-sm leading-relaxed mb-6 max-w-md">
                 Do you think your laptop is a bit boring? We're here to provide you with unique dev and tech stickers to pimp up your own devices.
               </p>

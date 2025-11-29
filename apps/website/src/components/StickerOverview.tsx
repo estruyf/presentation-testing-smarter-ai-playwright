@@ -1,5 +1,6 @@
 import * as React from 'react';
 import { DefaultButton, Icon, Spinner, TextField, initializeIcons } from '@fluentui/react';
+import { TEST_IDS } from '../constants/testIds';
 
 // Initialize Fluent UI icons
 initializeIcons();
@@ -67,14 +68,14 @@ export const StickerOverview: React.FunctionComponent<IStickerOverviewProps> = (
   return (
     <section
       className='sticker_inventory w-full'
-      data-testid="sticker_inventory"
+      data-testid={TEST_IDS.STICKER_INVENTORY.ROOT}
     >
       {
         error && (
           <div
             className={`bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded relative mb-4`}
             role="alert"
-            data-testid="sticker_inventory__error">
+            data-testid={TEST_IDS.STICKER_INVENTORY.ERROR}>
             <span className="block sm:inline">{error}</span>
           </div>
         )
@@ -87,14 +88,14 @@ export const StickerOverview: React.FunctionComponent<IStickerOverviewProps> = (
             placeholder='Min stock...'
             value={filter}
             onChange={(_, value) => setFilter(value || '')}
-            data-testid="sticker_inventory__filter__input"
+            data-testid={TEST_IDS.STICKER_INVENTORY.FILTER.INPUT}
             className='w-full'
             styles={{ fieldGroup: { height: 40 } }}
           />
 
           <DefaultButton
             onClick={() => fetchStickers(parseInt(filter) || 0)}
-            data-testid="sticker_inventory__filter__button"
+            data-testid={TEST_IDS.STICKER_INVENTORY.FILTER.BUTTON}
             className="h-10 px-6 bg-pink-600 text-white hover:bg-pink-700 border-none transition-colors"
           >
             <Icon iconName='Filter' className="mr-2" />
@@ -104,7 +105,7 @@ export const StickerOverview: React.FunctionComponent<IStickerOverviewProps> = (
 
         <div
           className='text-sm text-gray-500 font-medium'
-          data-testid="sticker_inventory__refresh">
+          data-testid={TEST_IDS.STICKER_INVENTORY.REFRESH}>
           Updated: {(new Date()).toLocaleTimeString()}
         </div>
       </div>
@@ -113,13 +114,13 @@ export const StickerOverview: React.FunctionComponent<IStickerOverviewProps> = (
         stickers.length > 0 ? (
           <div
             className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8'
-            data-testid="sticker_inventory__overview">
+            data-testid={TEST_IDS.STICKER_INVENTORY.OVERVIEW.ROOT}>
             {
               stickers.map((sticker) => (
                 <div
                   key={sticker.Id}
                   className='group bg-white rounded-xl shadow-sm hover:shadow-xl transition-all duration-300 overflow-hidden border border-gray-100 flex flex-col h-full'
-                  data-testid="sticker_inventory__overview__sticker">
+                  data-testid={TEST_IDS.STICKER_INVENTORY.OVERVIEW.STICKER}>
                   <div className='relative overflow-hidden bg-gray-50'>
                     <img
                       src={`https://ik.imagekit.io/pyodstickers/tr:w-400,h-${imageHeight || 200}/stickers/${sticker.Image}`}
@@ -130,7 +131,7 @@ export const StickerOverview: React.FunctionComponent<IStickerOverviewProps> = (
 
                     <div
                       className='opacity-0 group-hover:opacity-100 transition-opacity duration-300 absolute inset-0 flex items-center justify-center bg-black/60 backdrop-blur-sm p-6'
-                      data-testid='sticker_inventory__sticker__description'>
+                      data-testid={TEST_IDS.STICKER_INVENTORY.STICKER.DESCRIPTION}>
                       <div className='text-white text-center transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300'>
                         <p className='text-base font-medium leading-relaxed'>{sticker.Description}</p>
                       </div>
@@ -138,8 +139,8 @@ export const StickerOverview: React.FunctionComponent<IStickerOverviewProps> = (
 
                     <div className="absolute top-3 right-3">
                       <span className={`px-3 py-1 rounded-full text-xs font-bold shadow-sm ${sticker.Total > 25 ? 'bg-green-100 text-green-800' :
-                          sticker.Total > 10 ? 'bg-yellow-100 text-yellow-800' :
-                            'bg-red-100 text-red-800'
+                        sticker.Total > 10 ? 'bg-yellow-100 text-yellow-800' :
+                          'bg-red-100 text-red-800'
                         }`}>
                         {sticker.Total > 0 ? 'In Stock' : 'Out of Stock'}
                       </span>
@@ -155,11 +156,11 @@ export const StickerOverview: React.FunctionComponent<IStickerOverviewProps> = (
                     <div className='flex items-end justify-between mt-2'>
                       <div className='flex flex-col'>
                         <span className="text-xs text-gray-500 uppercase font-semibold tracking-wider">Price</span>
-                        <span className='text-2xl font-bold text-gray-900'>€ <span data-testid="sticker_inventory__sticker__price">{sticker.Price.toFixed(2)}</span></span>
+                        <span className='text-2xl font-bold text-gray-900'>€ <span data-testid={TEST_IDS.STICKER_INVENTORY.STICKER.PRICE}>{sticker.Price.toFixed(2)}</span></span>
                       </div>
                       <div className='flex flex-col items-end'>
                         <span className="text-xs text-gray-500 uppercase font-semibold tracking-wider">Quantity</span>
-                        <span className='text-lg font-mono font-medium text-gray-700' data-testid="sticker_inventory__sticker__total">{sticker.Total}</span>
+                        <span className='text-lg font-mono font-medium text-gray-700' data-testid={TEST_IDS.STICKER_INVENTORY.STICKER.TOTAL}>{sticker.Total}</span>
                       </div>
                     </div>
                   </div>
@@ -170,7 +171,7 @@ export const StickerOverview: React.FunctionComponent<IStickerOverviewProps> = (
         ) : (
           <div
             className='bg-white flex items-center justify-center p-12 rounded-lg shadow-sm border border-gray-100'
-            data-testid="sticker_inventory__empty">
+            data-testid={TEST_IDS.STICKER_INVENTORY.EMPTY}>
             <div className="text-center">
               <div className="text-4xl mb-4">🔍</div>
               <h3 className="text-lg font-medium text-gray-900">No stickers found</h3>
@@ -184,7 +185,7 @@ export const StickerOverview: React.FunctionComponent<IStickerOverviewProps> = (
         loading && (
           <div
             className={`bg-white/80 backdrop-blur-sm absolute inset-0 flex items-center justify-center z-10 rounded-lg`}
-            data-testid="sticker_inventory__spinner">
+            data-testid={TEST_IDS.STICKER_INVENTORY.SPINNER}>
             <div className="bg-white p-6 rounded-xl shadow-xl flex flex-col items-center">
               <Spinner label={`Fetching stickers...`} />
             </div>

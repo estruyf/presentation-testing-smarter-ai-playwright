@@ -1,0 +1,43 @@
+title: API
+description: ''
+version: 2
+demos:
+  - id: demo-mikdt2yz-6umn
+    title: Adding tests for API
+    steps:
+      - action: openCopilotChat
+      - action: agentCopilotChat
+      - action: typeText
+        content: Add additional tests in the `e2e/tests/sticker-inventory.spec.ts` file to verify the API calls the website makes. Make sure to also include a test to check the experience what happens when the API call fails. use context7
+        insertTypingSpeed: 5
+      - action: pressEnter
+  - title: Update inventory
+    description: ''
+    steps:
+      - action: open
+        path: /e2e/tests/sticker-inventory.spec.ts
+      - action: applyPatch
+        path: /e2e/tests/sticker-inventory.spec.ts
+        contentPath: /.demo/snapshots/ai-tests.ts
+        patch: /.demo/patches/added-api-tests.spec.patch
+        insertTypingMode: line-by-line
+        insertTypingSpeed: 30
+      - action: save
+  - title: 'Highlight: sticker api'
+    description: ''
+    steps:
+      - action: highlight
+        path: /e2e/tests/sticker-inventory.spec.ts
+        position: '91:99'
+  - title: 'Highlight: filter api'
+    description: ''
+    steps:
+      - action: highlight
+        path: /e2e/tests/sticker-inventory.spec.ts
+        position: '101:117'
+  - title: 'Highlight: fail'
+    description: ''
+    steps:
+      - action: highlight
+        path: /e2e/tests/sticker-inventory.spec.ts
+        position: '119:133'
