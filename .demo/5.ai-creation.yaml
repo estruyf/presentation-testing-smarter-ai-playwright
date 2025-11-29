@@ -27,6 +27,57 @@ demos:
       - action: customCopilotChat
         mode: playwright-test-generator
       - action: typeText
-        content: Generate me the tests for the sticker-inventory-test-plan.md test plan.
+        content: Generate me the `### 1. UI Component Tests` tests for the sticker-inventory-test-plan.md test plan.
+        insertTypingSpeed: 5
+      - action: pressEnter
+  - id: demo-mikjdkma-ska3
+    title: Copy over all tests
+    steps:
+      - action: openTerminal
+        terminalId: copy-tests
+      - action: waitForTimeout
+        timeout: 3000
+      - action: executeTerminalCommand
+        terminalId: copy-tests
+        command: cp -r .demo/snapshots/all-tests/* e2e/tests/
+        insertTypingMode: character-by-character
+        insertTypingSpeed: 5
+  - id: demo-mikjhc4x-dki3
+    title: Initial load
+    steps:
+      - action: closeTerminal
+        terminalId: copy-tests
+      - action: open
+        path: e2e/tests/inventory/initial-load.spec.ts
+  - id: demo-mikjiha3-endq
+    title: Accessibility
+    steps:
+      - action: open
+        path: e2e/tests/accessibility/a11y-compliance.spec.ts
+  - id: demo-mikjj185-epfe
+    title: Error handling
+    steps:
+      - action: open
+        path: e2e/tests/api/error-handling.spec.ts
+  - id: demo-mikjjmph-p5mw
+    title: Does it work?
+    steps:
+      - action: openTerminal
+        terminalId: test-ui
+      - action: waitForTimeout
+        timeout: 3000
+      - action: executeTerminalCommand
+        terminalId: test-ui
+        command: cd e2e && npx playwright test --ui
+        insertTypingMode: character-by-character
+        insertTypingSpeed: 5
+  - id: demo-mikjmho8-py9r
+    title: Fixing the tests
+    steps:
+      - action: openCopilotChat
+      - action: customCopilotChat
+        mode: playwright-test-healer
+      - action: typeText
+        content: Fix the failing tests
         insertTypingSpeed: 5
       - action: pressEnter
