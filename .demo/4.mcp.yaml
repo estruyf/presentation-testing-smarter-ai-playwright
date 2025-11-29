@@ -22,12 +22,26 @@ demos:
         position: '3:8'
         highlightWholeLine: true
         path: .vscode/mcp.json
+  - id: demo-mikfyhlg-fvt7
+    title: Agent file
+    steps:
+      - action: open
+        path: .github/agents/playwright.md
+      - action: highlight
+        path: /.github/agents/playwright.md
+        position: '1:7'
   - id: demo-mikfck7m-idge
-    title: Adding tests for API
+    title: Request Playwright MCP
     steps:
       - action: openCopilotChat
-      - action: agentCopilotChat
+      - action: customCopilotChat
+        mode: Playwright
       - action: typeText
         insertTypingSpeed: 5
-        content: Navigate to `http://localhost:5173` website, and create me a screensot from every sticker card.
+        content: Navigate to the http://localhost:5173/ site, and take a screenshot from each sticker card you find on the homepage.
       - action: pressEnter
+  - id: demo-mikg1666-5duc
+    title: Testing MCP
+    steps:
+      - action: openSlide
+        path: .demo/slides/mcp-testing.md

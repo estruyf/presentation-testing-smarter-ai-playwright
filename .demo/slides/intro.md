@@ -40,6 +40,18 @@ profileImg: .demo/assets/eliostruyf_2024.jpg
 layout: intro
 ---
 
+# Disclaimer: As this is an AI session, things might not go as planned 😉
+
+<style>
+  h1 {
+    color: #D7263D !important;
+  }
+</style>
+
+---
+layout: intro
+---
+
 # Since 2018
 
 <style>
