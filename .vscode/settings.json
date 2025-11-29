@@ -13,4 +13,7 @@
   "demoTime.highlightBlur": 2,
   "editor.hover.enabled": false,
   "demoTime.highlightZoomEnabled": 5,
+  "demoTime.customWebComponents": [
+    ".demo/components/loading.js"
+  ]
 }

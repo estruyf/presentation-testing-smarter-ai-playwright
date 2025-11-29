@@ -1,0 +1,9 @@
+title: The future
+description: ''
+version: 2
+demos:
+  - id: demo-mikk6hid-0x3j
+    title: The future
+    steps:
+      - action: openSlide
+        path: .demo/slides/future.md
