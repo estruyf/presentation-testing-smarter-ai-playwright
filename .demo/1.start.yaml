@@ -7,5 +7,19 @@ demos:
     steps:
       - action: openSlide
         path: .demo/slides/intro.md
+  - id: demo-mikcbg1p-fusu
+    title: The app
+    steps:
+      - action: openTerminal
+      - action: waitForTimeout
+        timeout: 3000
+      - action: executeTerminalCommand
+        command: cd apps/website && npm run dev
+        insertTypingMode: character-by-character
+  - id: demo-mikcdjb2-s5l7
+    title: Show the app
+    steps:
+      - action: openWebsite
+        url: http://localhost:5173
 engageTime:
   sessionId: kbsg6v

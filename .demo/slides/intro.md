@@ -118,3 +118,11 @@ layout: intro
 ---
 layout: intro
 ---
+
+# The app
+
+<style>
+  h1 {
+    font-size: 8em !important;
+  }
+</style>
