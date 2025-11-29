@@ -1,5 +1,5 @@
 import { test, expect } from "@playwright/test";
-import { TEST_IDS } from "../../apps/website/src/constants/testIds";
+import { TEST_IDS } from "../constants/testIds";
 
 const WEBSITE_URL = "http://localhost:5173";
 
