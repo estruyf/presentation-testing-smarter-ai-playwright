@@ -15,6 +15,8 @@ demos:
   - id: demo-mikivr21-n0jm
     title: Open the plan
     steps:
+      - action: executeVSCodeCommand
+        command: workbench.action.chat.cancel
       - action: create
         path: sticker-inventory-test-plan.md
         contentPath: .demo/snapshots/sticker-inventory-test-plan.md
@@ -33,6 +35,9 @@ demos:
   - id: demo-mikjdkma-ska3
     title: Copy over all tests
     steps:
+      - action: executeVSCodeCommand
+        command: workbench.action.chat.cancel
+      - action: closeCopilotChat
       - action: openTerminal
         terminalId: copy-tests
       - action: waitForTimeout

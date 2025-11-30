@@ -86,11 +86,29 @@ layout: intro
 # Playwright Test MCP
 
 - Build into Playwright Test framework
-- Created for E2E testing with AI agents
-- Comes with agents:
-	- Planner
-	- Generator
-	- Healer
+- Understands test files  
+- Run tests
+- Analyze failures
+- Propose fixes
+- Great for “fix my tests”
+
+---
+---
+
+# What the AI agents do
+
+**Planner**  
+Create test plans
+
+<br/>
+
+**Generator**  
+Write Playwright test code from the test plan
+
+<br/>
+
+**Healer**  
+Fix flaky selectors, broken tests, failed assertions, etc.
 
 ---
 layout: intro

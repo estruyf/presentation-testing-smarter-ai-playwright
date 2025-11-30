@@ -64,6 +64,9 @@ demos:
         theme: Demo Time Dark (no italic)
       - action: openSlide
         path: .demo/slides/mcp-testing.md
+    icons:
+      start: device-desktop
+      end: ''
   - id: demo-mikgjzq5-zgb4
     title: Create agents
     steps:
@@ -76,9 +79,12 @@ demos:
         command: npx playwright init-agents --loop=vscode
         insertTypingSpeed: 10
         insertTypingMode: character-by-character
+        terminalId: playwright
   - id: demo-mikgnty3-4jku
     title: Planner
     steps:
+      - action: closeTerminal
+        terminalId: playwright
       - action: create
         path: .github/agents/playwright-test-planner.agent.md
         contentPath: .demo/snapshots/playwright-test-planner.agent.md

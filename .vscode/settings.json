@@ -15,5 +15,6 @@
   "demoTime.highlightZoomEnabled": 5,
   "demoTime.customWebComponents": [
     ".demo/components/loading.js"
-  ]
+  ],
+  "workbench.colorTheme": "Demo Time Dark (no italic)"
 }
