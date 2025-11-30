@@ -12,6 +12,34 @@ demos:
     icons:
       start: device-desktop
       end: ''
+  - id: demo-miluw679-26fn
+    title: Show poll
+    steps:
+      - action: closeEngageTimePoll
+        pollId: 27e5dz
+      - action: showEngageTimePoll
+        pollId: 27e5dz
+    icons:
+      start: pie-chart
+      end: ''
+  - id: demo-miluy54c-bk5f
+    title: Show poll
+    steps:
+      - action: closeEngageTimePoll
+        pollId: gcb6u0
+      - action: showEngageTimePoll
+        pollId: gcb6u0
+    icons:
+      start: pie-chart
+      end: ''
+  - id: demo-miluylw2-99zs
+    title: Using Playwright
+    steps:
+      - action: openSlide
+        path: .demo/slides/using-playwright.md
+    icons:
+      start: device-desktop
+      end: ''
   - id: demo-mikcbg1p-fusu
     title: The app
     steps:
@@ -30,6 +58,16 @@ demos:
     steps:
       - action: openWebsite
         url: http://localhost:5173
+  - id: demo-milvgu9l-i5ys
+    title: Show poll
+    steps:
+      - action: closeEngageTimePoll
+        pollId: sqrzff
+      - action: showEngageTimePoll
+        pollId: sqrzff
+    icons:
+      start: pie-chart
+      end: ''
   - id: demo-mikcnn4s-vqx5
     title: Start AI
     steps:

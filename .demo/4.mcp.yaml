@@ -5,6 +5,8 @@ demos:
   - id: demo-mike9bjx-1chl
     title: MCP
     steps:
+      - action: setTheme
+        theme: Demo Time Dark (no italic)
       - action: openSlide
         path: .demo/slides/mcp.md
     icons:
@@ -13,11 +15,16 @@ demos:
   - id: demo-mikf59o6-14fm
     title: Create MCP config
     steps:
+      - action: setTheme
+        theme: Demo Time Light (no italic)
       - action: create
         path: .vscode/mcp.json
         contentPath: .demo/snapshots/mcp.json
       - action: open
         path: .vscode/mcp.json
+  - id: demo-milw3xax-xdau
+    title: Highlight config
+    steps:
       - action: highlight
         position: '3:8'
         highlightWholeLine: true
@@ -40,14 +47,28 @@ demos:
         insertTypingSpeed: 5
         content: Navigate to the http://localhost:5173/ site, and take a screenshot from each sticker card you find on the homepage.
       - action: pressEnter
+  - id: demo-milw5dbh-0wos
+    title: Show poll
+    steps:
+      - action: closeEngageTimePoll
+        pollId: uzzs99
+      - action: showEngageTimePoll
+        pollId: uzzs99
+    icons:
+      start: pie-chart
+      end: ''
   - id: demo-mikg1666-5duc
     title: Testing MCP
     steps:
+      - action: setTheme
+        theme: Demo Time Dark (no italic)
       - action: openSlide
         path: .demo/slides/mcp-testing.md
   - id: demo-mikgjzq5-zgb4
     title: Create agents
     steps:
+      - action: setTheme
+        theme: Demo Time Light (no italic)
       - action: openTerminal
       - action: waitForTimeout
         timeout: 3000
@@ -79,3 +100,5 @@ demos:
         contentPath: .demo/snapshots/playwright-test-healer.agent.md
       - action: open
         path: .github/agents/playwright-test-healer.agent.md
+engageTime:
+  sessionId: kbsg6v

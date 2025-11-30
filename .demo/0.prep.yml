@@ -23,4 +23,9 @@ demos:
         setting:
           key: terminal.integrated.fontSize
           value: 20
-      - action: startEngageTimeSession
+      - action: openTerminal
+      - action: waitForTimeout
+        timeout: 2000
+      - action: executeTerminalCommand
+        command: open -a EngageTime && exit
+        insertTypingMode: character-by-character

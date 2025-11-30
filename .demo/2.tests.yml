@@ -2,6 +2,13 @@ title: Testing
 description: ''
 version: 2
 demos:
+  - id: demo-milvngt6-ngh6
+    title: Show poll
+    steps:
+      - action: closeEngageTimePoll
+        pollId: d4drre
+      - action: showEngageTimePoll
+        pollId: d4drre
   - id: demo-mikd8d6k-37iy
     title: Create tests
     steps:
@@ -13,11 +20,14 @@ demos:
   - id: demo-mikd9ki9-ejhy
     title: context7?
     steps:
+      - action: closeCopilotChat
       - action: openWebsite
         url: https://context7.com
   - title: 'Test: should load'
     description: ''
     steps:
+      - action: executeVSCodeCommand
+        command: workbench.action.chat.cancel
       - action: create
         path: tests/sticker-inventory.spec.ts
         contentPath: .demo/snapshots/ai-tests.ts

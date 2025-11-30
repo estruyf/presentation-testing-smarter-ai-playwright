@@ -15,7 +15,13 @@ layout: intro
 layout: intro
 ---
 
-# Just as USB-C lets you connect any device to any peripheral, MCP lets you connect any AI model to any data source.
+# Just as USB-C lets you connect any device to any peripheral
+
+---
+layout: intro
+---
+
+# MCP lets you connect any AI model to any data source.
 
 ---
 
@@ -26,6 +32,19 @@ layout: intro
 - An open standard for two-way connections between AI systems and data sources.
 - Break down the barriers between AI models and the places where data lives
 - MCP provides a universal language for AI to "talk" to systems.
+
+---
+---
+
+# MCP + Playwright?
+
+AI can:
+
+- Inspect your UI
+- Generate tests with real browser context
+- Run actions and verify results
+- Analyze failures and propose fixes
+- Update flaky selectors automatically
 
 ---
 layout: intro
@@ -55,11 +74,13 @@ layout: quote
 
 ---
 
-# Playwright MCP Server
+# @playwright/mcp
 
-- Great for browser automation tasks
-- Verify if "things" are working
-- Build-in into GitHub Copilot Coding Agent
+- Browser automation  
+- Explore the UI  
+- Verify functionality  
+- Great for "do this in the UI"
+- Built-in into GitHub Copilot Coding Agent
 
 ---
 layout: image

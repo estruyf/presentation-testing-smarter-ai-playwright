@@ -5,6 +5,8 @@ demos:
   - id: demo-mikk6hid-0x3j
     title: The future
     steps:
+      - action: setTheme
+        theme: Demo Time Dark (no italic)
       - action: openSlide
         path: .demo/slides/future.md
   - id: demo-mh9f5y2q-jloq
