@@ -47,11 +47,21 @@ demos:
         insertTypingSpeed: 5
         content: Navigate to the http://localhost:5173/ site, and take a screenshot from each sticker card you find on the homepage.
       - action: pressEnter
-  - id: demo-milw5dbh-0wos
-    title: Show poll
+  - id: demo-miop0i3x-v7mf
+    title: Auth
     steps:
       - action: cancelCopilotChat
       - action: closeCopilotChat
+      - action: setTheme
+        theme: Demo Time Dark (no italic)
+      - action: openSlide
+        path: .demo/slides/auth.md
+    icons:
+      start: device-desktop
+      end: ''
+  - id: demo-milw5dbh-0wos
+    title: Show poll
+    steps:
       - action: closeEngageTimePoll
         pollId: uzzs99
       - action: showEngageTimePoll
@@ -62,8 +72,6 @@ demos:
   - id: demo-mikg1666-5duc
     title: Testing MCP
     steps:
-      - action: setTheme
-        theme: Demo Time Dark (no italic)
       - action: openSlide
         path: .demo/slides/mcp-testing.md
     icons:
@@ -86,9 +94,9 @@ demos:
     title: Planner
     steps:
       - action: closeTerminal
-        terminalId: playwright    
+        terminalId: playwright
       - action: executeVSCodeCommand
-        command: workbench.action.terminal.focus  
+        command: workbench.action.terminal.focus
       - action: executeVSCodeCommand
         command: workbench.action.terminal.toggleTerminal
       - action: create
