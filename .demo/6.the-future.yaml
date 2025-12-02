@@ -5,8 +5,7 @@ demos:
   - id: demo-mikk6hid-0x3j
     title: The future
     steps:
-      - action: executeVSCodeCommand
-        command: workbench.action.chat.cancel
+      - action: cancelCopilotChat
       - action: closeCopilotChat
       - action: setTheme
         theme: Demo Time Dark (no italic)

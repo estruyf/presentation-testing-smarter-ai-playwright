@@ -20,14 +20,13 @@ demos:
   - id: demo-mikd9ki9-ejhy
     title: context7?
     steps:
+      - action: cancelCopilotChat
       - action: closeCopilotChat
       - action: openWebsite
         url: https://context7.com
   - title: 'Test: should load'
     description: ''
     steps:
-      - action: executeVSCodeCommand
-        command: workbench.action.chat.cancel
       - action: create
         path: tests/sticker-inventory.spec.ts
         contentPath: .demo/snapshots/ai-tests.ts

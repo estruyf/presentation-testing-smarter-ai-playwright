@@ -50,6 +50,8 @@ demos:
   - id: demo-milw5dbh-0wos
     title: Show poll
     steps:
+      - action: cancelCopilotChat
+      - action: closeCopilotChat
       - action: closeEngageTimePoll
         pollId: uzzs99
       - action: showEngageTimePoll

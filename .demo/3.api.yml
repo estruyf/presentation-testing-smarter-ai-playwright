@@ -14,8 +14,7 @@ demos:
   - title: Update inventory
     description: ''
     steps:
-      - action: executeVSCodeCommand
-        command: workbench.action.chat.cancel
+      - action: cancelCopilotChat
       - action: closeCopilotChat
       - action: open
         path: /tests/sticker-inventory.spec.ts

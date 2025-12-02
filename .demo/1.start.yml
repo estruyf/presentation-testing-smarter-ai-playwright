@@ -82,6 +82,7 @@ demos:
   - id: demo-mikcqjhs-u9iv
     title: Show test IDs
     steps:
+      - action: cancelCopilotChat
       - action: closeCopilotChat
       - action: open
         path: apps/website/src/constants/testIds.ts
