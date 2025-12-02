@@ -13,12 +13,6 @@ demos:
     title: Restore settings
     steps:
       - action: restoreSettings
-      - action: executeScript
-        command: osascript
-        path: .demo/scripts/show.menubar.scpt
-        id: show-menubar
-      - action: executeScript
-        command: osascript
-        path: .demo/scripts/focus.mode.off.scpt
-        id: focus-mode-off
       - action: closeEngageTimeSession
+      - action: macos.showMenubar
+      - action: macos.disableFocusMode

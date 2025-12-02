@@ -7,14 +7,8 @@ demos:
     title: Prepare
     steps:
       - action: backupSettings
-      - action: executeScript
-        command: osascript
-        path: .demo/scripts/hide.menubar.scpt
-        id: hide-menubar
-      - action: executeScript
-        command: osascript
-        path: .demo/scripts/focus.mode.on.scpt
-        id: focus-mode-on
+      - action: macos.hideMenubar
+      - action: macos.enableFocusMode
       - action: setSetting
         setting:
           key: editor.fontSize
