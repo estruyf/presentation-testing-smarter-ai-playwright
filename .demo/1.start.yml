@@ -5,6 +5,7 @@ demos:
   - id: demo-mikaacy0-ha7g
     title: Intro
     steps:
+      - action: closeTerminal
       - action: setTheme
         theme: Demo Time Dark (no italic)
       - action: openSlide
@@ -56,6 +57,8 @@ demos:
   - id: demo-mikcdjb2-s5l7
     title: Show the app
     steps:
+      - action: executeVSCodeCommand
+        command: workbench.action.terminal.toggleTerminal
       - action: openWebsite
         url: http://localhost:5173
   - id: demo-milvgu9l-i5ys

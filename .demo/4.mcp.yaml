@@ -86,7 +86,9 @@ demos:
     title: Planner
     steps:
       - action: closeTerminal
-        terminalId: playwright
+        terminalId: playwright      
+      - action: executeVSCodeCommand
+        command: workbench.action.terminal.toggleTerminal
       - action: create
         path: .github/agents/playwright-test-planner.agent.md
         contentPath: .demo/snapshots/playwright-test-planner.agent.md

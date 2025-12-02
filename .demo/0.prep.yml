@@ -23,3 +23,5 @@ demos:
       - action: executeTerminalCommand
         command: open -a EngageTime && exit
         insertTypingMode: character-by-character
+      - action: executeVSCodeCommand
+        command: notifications.toggleDoNotDisturbMode

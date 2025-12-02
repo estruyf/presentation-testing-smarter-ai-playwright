@@ -51,6 +51,8 @@ demos:
     steps:
       - action: closeTerminal
         terminalId: copy-tests
+      - action: executeVSCodeCommand
+        command: workbench.action.terminal.toggleTerminal
       - action: open
         path: tests/inventory/initial-load.spec.ts
   - id: demo-mikjiha3-endq
@@ -78,6 +80,8 @@ demos:
   - id: demo-mikjmho8-py9r
     title: Fixing the tests
     steps:
+      - action: executeVSCodeCommand
+        command: workbench.action.terminal.toggleTerminal
       - action: openCopilotChat
       - action: customCopilotChat
         mode: playwright-test-healer
