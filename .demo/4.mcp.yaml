@@ -37,10 +37,12 @@ demos:
       - action: highlight
         path: /.github/agents/playwright.md
         position: '1:7'
+  - title: Open Copilot Chat
+    steps:
+      - action: openCopilotChat
   - id: demo-mikfck7m-idge
     title: Request Playwright MCP
     steps:
-      - action: openCopilotChat
       - action: customCopilotChat
         mode: Playwright
       - action: typeText

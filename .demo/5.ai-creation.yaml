@@ -2,10 +2,12 @@ title: AI Creation
 description: ''
 version: 2
 demos:
+  - title: Open Copilot Chat
+    steps:
+      - action: openCopilotChat
   - id: demo-mikiuil2-ws7u
     title: Create the plan
     steps:
-      - action: openCopilotChat
       - action: customCopilotChat
         mode: playwright-test-planner
       - action: typeText
@@ -22,10 +24,12 @@ demos:
         contentPath: .demo/snapshots/sticker-inventory-test-plan.md
       - action: open
         path: sticker-inventory-test-plan.md
+  - title: Open Copilot Chat
+    steps:
+      - action: openCopilotChat
   - id: demo-mikixbzc-7grp
     title: Generate the tests
     steps:
-      - action: openCopilotChat
       - action: customCopilotChat
         mode: playwright-test-generator
       - action: typeText
@@ -79,14 +83,17 @@ demos:
         command: npx playwright test --ui
         insertTypingMode: character-by-character
         insertTypingSpeed: 5
-  - id: demo-mikjmho8-py9r
-    title: Fixing the tests
+  - id: demo-mikjmho8-py9g
+    title: Open Copilot Chat
     steps:
       - action: executeVSCodeCommand
         command: workbench.action.terminal.focus
       - action: executeVSCodeCommand
         command: workbench.action.terminal.toggleTerminal
       - action: openCopilotChat
+  - id: demo-mikjmho8-py9r
+    title: Fixing the tests
+    steps:
       - action: customCopilotChat
         mode: playwright-test-healer
       - action: typeText

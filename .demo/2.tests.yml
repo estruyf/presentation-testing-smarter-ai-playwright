@@ -9,10 +9,12 @@ demos:
         pollId: d4drre
       - action: showEngageTimePoll
         pollId: d4drre
+  - title: Open Copilot Chat
+    steps:
+      - action: openCopilotChat
   - id: demo-mikd8d6k-37iy
     title: Create tests
     steps:
-      - action: openCopilotChat
       - action: agentCopilotChat
       - action: typeText
         content: Can you create me E2E tests for the `apps/website` which is available at `http://localhost:5173`. These tests need to created within the `tests/sticker-inventory.spec.ts` test file and created with Playwright. use context7

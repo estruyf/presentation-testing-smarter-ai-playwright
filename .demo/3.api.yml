@@ -2,10 +2,12 @@ title: API
 description: ''
 version: 2
 demos:
+  - title: Open Copilot Chat
+    steps:
+      - action: openCopilotChat
   - id: demo-mikdt2yz-6umn
     title: Adding tests for API
     steps:
-      - action: openCopilotChat
       - action: agentCopilotChat
       - action: typeText
         content: Add additional tests in the `tests/sticker-inventory.spec.ts` file to verify the API calls the website makes. Make sure to also include a test to check the experience what happens when the API call fails. use context7
