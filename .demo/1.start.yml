@@ -57,10 +57,12 @@ demos:
   - id: demo-mikcdjb2-s5l7
     title: Show the app
     steps:
-      - action: executeVSCodeCommand
-        command: workbench.action.terminal.toggleTerminal
       - action: openWebsite
         url: http://localhost:5173
+      - action: executeVSCodeCommand
+        command: workbench.action.terminal.focus
+      - action: executeVSCodeCommand
+        command: workbench.action.terminal.toggleTerminal
   - id: demo-milvgu9l-i5ys
     title: Show poll
     steps:

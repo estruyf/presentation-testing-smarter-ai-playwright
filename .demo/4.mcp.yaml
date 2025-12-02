@@ -86,7 +86,9 @@ demos:
     title: Planner
     steps:
       - action: closeTerminal
-        terminalId: playwright      
+        terminalId: playwright    
+      - action: executeVSCodeCommand
+        command: workbench.action.terminal.focus  
       - action: executeVSCodeCommand
         command: workbench.action.terminal.toggleTerminal
       - action: create
