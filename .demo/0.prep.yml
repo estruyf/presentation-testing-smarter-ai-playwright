@@ -25,3 +25,13 @@ demos:
         insertTypingMode: character-by-character
       - action: executeVSCodeCommand
         command: notifications.toggleDoNotDisturbMode
+      - action: startEngageTimePoll
+        pollId: 27e5dz
+      - action: startEngageTimePoll
+        pollId: gcb6u0
+      - action: startEngageTimePoll
+        pollId: sqrzff
+      - action: startEngageTimePoll
+        pollId: d4drre
+      - action: startEngageTimePoll
+        pollId: sqrzff
