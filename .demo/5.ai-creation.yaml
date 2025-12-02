@@ -76,7 +76,7 @@ demos:
         timeout: 3000
       - action: executeTerminalCommand
         terminalId: test-ui
-        command: cd e2e && npx playwright test --ui
+        command: npx playwright test --ui
         insertTypingMode: character-by-character
         insertTypingSpeed: 5
   - id: demo-mikjmho8-py9r
