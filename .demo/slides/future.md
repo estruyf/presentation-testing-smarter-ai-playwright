@@ -59,6 +59,17 @@ layout: intro
 ![](.demo/assets/skipping.png)
 
 ---
+
+# Tips for using AI to generate tests
+
+- Have good documentation
+- Mono-repo project makes it easier (for AI)
+- Start small, be specific
+- Let AI do the boring work (selectors, test IDs, etc.)
+- Hand over the errors to AI for clarification
+
+
+---
 layout: intro
 ---
 

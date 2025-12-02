@@ -6,6 +6,12 @@ layout: image
 ![](.demo/assets/stats.png)
 
 ---
+layout: intro
+---
+
+# Testing is more important than ever
+
+---
 layout: quote
 ---
 
