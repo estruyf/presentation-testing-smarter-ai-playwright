@@ -67,7 +67,7 @@ demos:
       - action: closeEngageTimePoll
         pollId: uzzs99
       - action: showEngageTimePoll
-        pollId: uzzs99
+        pollId: p8t97y
     icons:
       start: pie-chart
       end: ''
@@ -123,4 +123,4 @@ demos:
       - action: open
         path: .github/agents/playwright-test-healer.agent.md
 engageTime:
-  sessionId: kbsg6v
+  sessionId: iotpoo

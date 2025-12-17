@@ -1,7 +1,7 @@
 title: Preparations
 version: 2
 engageTime:
-  sessionId: kbsg6v
+  sessionId: iotpoo
 demos:
   - id: demo-mgt4o0us-6pe3
     title: Prepare
@@ -26,12 +26,12 @@ demos:
       - action: executeVSCodeCommand
         command: notifications.toggleDoNotDisturbMode
       - action: startEngageTimePoll
-        pollId: 27e5dz
+        pollId: fpapep
       - action: startEngageTimePoll
-        pollId: gcb6u0
+        pollId: 4swqdf
       - action: startEngageTimePoll
-        pollId: sqrzff
+        pollId: jndw7r
       - action: startEngageTimePoll
-        pollId: d4drre
+        pollId: fmozi6
       - action: startEngageTimePoll
-        pollId: sqrzff
+        pollId: p8t97y

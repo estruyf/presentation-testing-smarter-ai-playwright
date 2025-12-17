@@ -8,7 +8,7 @@ demos:
       - action: closeEngageTimePoll
         pollId: d4drre
       - action: showEngageTimePoll
-        pollId: d4drre
+        pollId: fmozi6
   - title: Open Copilot Chat
     steps:
       - action: openCopilotChat
@@ -57,4 +57,4 @@ demos:
         path: /tests/sticker-inventory.spec.ts
         position: '58:75'
 engageTime:
-  sessionId: kbsg6v
+  sessionId: iotpoo
