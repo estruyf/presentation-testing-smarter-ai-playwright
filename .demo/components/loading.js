@@ -72,7 +72,7 @@ export class LoadingDots extends LitElement {
 
   constructor() {
     super();
-    this.color = '#fff';
+    this.color = '#000';
     this.size = '8px';
     this.speed = '1.4s';
     this.count = 3;

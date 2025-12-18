@@ -1,5 +1,5 @@
-# ESPC25 - Testing smarter: Bringing AI into your E2E testing workflows
+# MC2MC - Testing smarter: Bringing AI into your E2E testing workflows
 
 End-to-end testing with Playwright is something I use daily to ensure websites and tools are fully covered. But maintaining these tests can be time-consuming, especially in rapidly changing environments. What if AI could help you test smarter? In this session, we’ll explore how AI tools and MCP servers can assist in generating comprehensive Playwright test cases, analyzing failed runs, summarizing logs, and maintaining stable E2E tests. You’ll see how to combine pre-authenticated sessions, and AI-powered diagnostics to create a more resilient testing setup that ensures full coverage of your applications. Based on real-world automation scenarios, this talk will help you modernize your Playwright testing workflows and reduce maintenance while increasing confidence that every feature works as expected.
 
-> Template: https://github.com/estruyf/presentation-m365-playwright-github-actions
+> [MC2MC Live: The Martian Codebase](https://mc2mc.be/mc2mc-live-the-martian-codebase-18-12-2025/)

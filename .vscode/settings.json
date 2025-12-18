@@ -1,6 +1,6 @@
 {
   "demoTime.defaultFileType": "yaml",
-  "demoTime.customTheme": ".demo/theme/espc25.css",
+  "demoTime.customTheme": ".demo/theme/mc2mc.css",
   "[markdown]": {
     "editor.formatOnSave": false
   },
@@ -16,5 +16,5 @@
   "demoTime.customWebComponents": [
     ".demo/components/loading.js"
   ],
-  "workbench.colorTheme": "Demo Time Dark (no italic)"
+  "workbench.colorTheme": "Demo Time Light (no italic)"
 }

@@ -6,7 +6,7 @@ demos:
     title: MCP
     steps:
       - action: setTheme
-        theme: Demo Time Dark (no italic)
+        theme: Demo Time Light (no italic)
       - action: openSlide
         path: .demo/slides/mcp.md
     icons:
@@ -55,7 +55,7 @@ demos:
       - action: cancelCopilotChat
       - action: closeCopilotChat
       - action: setTheme
-        theme: Demo Time Dark (no italic)
+        theme: Demo Time Light (no italic)
       - action: openSlide
         path: .demo/slides/auth.md
     icons:

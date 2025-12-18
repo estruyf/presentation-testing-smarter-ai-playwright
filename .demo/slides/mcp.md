@@ -1,5 +1,5 @@
 ---
-theme: espc25
+theme: mc2mc
 layout: intro
 ---
 
@@ -15,23 +15,21 @@ layout: intro
 layout: intro
 ---
 
-# Just as USB-C lets you connect any device to any peripheral
+# USB-C for devices and peripherals
 
 ---
 layout: intro
 ---
 
-# MCP lets you connect any AI model to any data source.
+# MCP: Connect AI to Any Data Source
 
 ---
 
 # What is Model Context Protocol (MCP)?
 
-**The "USB-C" for AI Applications**
-
-- An open standard for two-way connections between AI systems and data sources.
-- Break down the barriers between AI models and the places where data lives
-- MCP provides a universal language for AI to "talk" to systems.
+- An open standard for two-way connections
+- Break down the barriers
+- Universal "language"
 
 ---
 ---
@@ -56,7 +54,13 @@ layout: intro
 layout: intro
 ---
 
-# Playwright MCP Servers
+# Playwright MCP Server**s**
+
+<style>
+  strong {
+    color: #ff4081 !important;
+  }
+</style>
 
 ---
 layout: quote

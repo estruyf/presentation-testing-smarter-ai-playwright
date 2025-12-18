@@ -9,6 +9,9 @@ demos:
     steps:
       - action: openSlide
         path: .demo/slides/rating.md
+    icons:
+      start: device-desktop
+      end: ''
   - id: demo-mh9fddvf-hnwr
     title: Restore settings
     steps:

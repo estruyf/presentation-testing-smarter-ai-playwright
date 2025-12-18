@@ -1,5 +1,5 @@
 ---
-theme: espc25
+theme: mc2mc
 layout: intro
 ---
 

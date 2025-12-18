@@ -1,5 +1,5 @@
 ---
-theme: espc25
+theme: mc2mc
 layout: image
 ---
 
@@ -15,7 +15,7 @@ layout: intro
 layout: quote
 ---
 
-# Some people measure success in features shipped.<br/> Testers measure it in how often they can finally press **merge** without fear.
+# Devs: features shipped.<br/> Testers: fearless merges.
 
 <style>
   h1 {
@@ -57,7 +57,7 @@ layout: section
 layout: section
 ---
 
-# Time to meet the intern who never sleeps, never complains, and always writes selectors with perfect indentation.
+# Meet the intern: tireless, never complains.
 
 ---
 layout: intro

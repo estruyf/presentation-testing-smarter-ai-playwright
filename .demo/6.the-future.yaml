@@ -8,11 +8,17 @@ demos:
       - action: cancelCopilotChat
       - action: closeCopilotChat
       - action: setTheme
-        theme: Demo Time Dark (no italic)
+        theme: Demo Time Light (no italic)
       - action: openSlide
         path: .demo/slides/future.md
+    icons:
+      start: device-desktop
+      end: ''
   - id: demo-mh9f5y2q-jloq
     title: Outro
     steps:
       - action: openSlide
         path: .demo/slides/the-end.md
+    icons:
+      start: device-desktop
+      end: ''

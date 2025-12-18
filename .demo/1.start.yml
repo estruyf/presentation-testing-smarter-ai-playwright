@@ -7,7 +7,7 @@ demos:
     steps:
       - action: closeTerminal
       - action: setTheme
-        theme: Demo Time Dark (no italic)
+        theme: Demo Time Light (no italic)
       - action: openSlide
         path: .demo/slides/intro.md
     icons:

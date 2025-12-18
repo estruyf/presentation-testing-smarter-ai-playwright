@@ -1,7 +1,7 @@
 ---
-theme: espc25
+theme: mc2mc
 layout: image
-image: .demo/assets/espc.webp
+image: .demo/assets/mc2mc-intro.png
 ---
 
 ---
@@ -10,9 +10,9 @@ layout: intro
 
 # Let me get to know you!
 
-![](.demo/assets/session-kbsg6v-qr.png)
+![](.demo/assets/session-iotpoo-qr.png)
 
-https://engagetime.live/session/kbsg6v
+https://engagetime.live/session/iotpoo
 
 <style>
   .slide img {
@@ -21,19 +21,15 @@ https://engagetime.live/session/kbsg6v
   }
 
   a {
-    color: white !important;
+    color: #000 !important;
     text-decoration: none !important;
     font-size: 1.2em;
   }
 </style>
 
 ---
-customLayout: .demo/layout/title.html
-image: .demo/assets/background.webp
-title: "Testing smarter: Bringing AI into your E2E testing workflows"
-name: Elio Struyf
-meta: EngageTime, Demo Time, Struyf Consulting Belgium
-profileImg: .demo/assets/eliostruyf_2024.jpg
+layout: image
+image: .demo/assets/mc2mc-intro.png
 ---
 
 ---

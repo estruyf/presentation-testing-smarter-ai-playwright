@@ -1,5 +1,5 @@
 ---
-theme: espc25
+theme: mc2mc
 layout: intro
 ---
 
@@ -27,7 +27,7 @@ layout: intro
 
 <style>
 	a {
-		color: #fff !important;
+		color: rgb(0 0 0 / .65) !important;
 	}
 </style>
 
