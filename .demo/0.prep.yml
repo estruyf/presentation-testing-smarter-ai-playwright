@@ -25,6 +25,9 @@ demos:
         insertTypingMode: character-by-character
       - action: executeVSCodeCommand
         command: notifications.toggleDoNotDisturbMode
+  - id: demo-mjba87os-g25p
+    title: Start polls
+    steps: 
       - action: startEngageTimePoll
         pollId: fpapep
       - action: startEngageTimePoll
@@ -35,3 +38,6 @@ demos:
         pollId: fmozi6
       - action: startEngageTimePoll
         pollId: p8t97y
+    icons:
+      start: pie-chart
+      end: ''
