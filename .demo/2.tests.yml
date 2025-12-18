@@ -12,6 +12,8 @@ demos:
   - title: Open Copilot Chat
     steps:
       - action: openCopilotChat
+      - action: executeVSCodeCommand
+        command: workbench.action.toggleMaximizedAuxiliaryBar
   - id: demo-mikd8d6k-37iy
     title: Create tests
     steps:
@@ -23,6 +25,8 @@ demos:
     title: context7?
     steps:
       - action: pressEnter
+      - action: executeVSCodeCommand
+        command: workbench.action.toggleMaximizedAuxiliaryBar
       - action: openWebsite
         url: https://context7.com
   - title: 'Test: should load'

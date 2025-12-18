@@ -5,6 +5,8 @@ demos:
   - title: Open Copilot Chat
     steps:
       - action: openCopilotChat
+      - action: executeVSCodeCommand
+        command: workbench.action.toggleMaximizedAuxiliaryBar
   - id: demo-mikiuil2-ws7u
     title: Create the plan
     steps:
@@ -18,6 +20,8 @@ demos:
     title: Open the plan
     steps:
       - action: cancelCopilotChat
+      - action: executeVSCodeCommand
+        command: workbench.action.toggleMaximizedAuxiliaryBar
       - action: closeCopilotChat
       - action: create
         path: sticker-inventory-test-plan.md
@@ -27,6 +31,8 @@ demos:
   - title: Open Copilot Chat
     steps:
       - action: openCopilotChat
+      - action: executeVSCodeCommand
+        command: workbench.action.toggleMaximizedAuxiliaryBar
   - id: demo-mikixbzc-7grp
     title: Generate the tests
     steps:
@@ -40,6 +46,8 @@ demos:
     title: Copy over all tests
     steps:
       - action: cancelCopilotChat
+      - action: executeVSCodeCommand
+        command: workbench.action.toggleMaximizedAuxiliaryBar
       - action: closeCopilotChat
       - action: openTerminal
         terminalId: copy-tests
@@ -91,6 +99,8 @@ demos:
       - action: executeVSCodeCommand
         command: workbench.action.terminal.toggleTerminal
       - action: openCopilotChat
+      - action: executeVSCodeCommand
+        command: workbench.action.toggleMaximizedAuxiliaryBar
   - id: demo-mikjmho8-py9r
     title: Fixing the tests
     steps:

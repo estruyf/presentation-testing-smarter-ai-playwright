@@ -40,6 +40,8 @@ demos:
   - title: Open Copilot Chat
     steps:
       - action: openCopilotChat
+      - action: executeVSCodeCommand
+        command: workbench.action.toggleMaximizedAuxiliaryBar
   - id: demo-mikfck7m-idge
     title: Request Playwright MCP
     steps:
@@ -53,6 +55,8 @@ demos:
     title: Auth
     steps:
       - action: cancelCopilotChat
+      - action: executeVSCodeCommand
+        command: workbench.action.toggleMaximizedAuxiliaryBar
       - action: closeCopilotChat
       - action: setTheme
         theme: Demo Time Light (no italic)

@@ -6,6 +6,8 @@ demos:
     title: The future
     steps:
       - action: cancelCopilotChat
+      - action: executeVSCodeCommand
+        command: workbench.action.toggleMaximizedAuxiliaryBar
       - action: closeCopilotChat
       - action: setTheme
         theme: Demo Time Light (no italic)
