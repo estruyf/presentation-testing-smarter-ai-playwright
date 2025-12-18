@@ -78,6 +78,8 @@ demos:
       - action: openCopilotChat
       - action: executeVSCodeCommand
         command: workbench.action.toggleMaximizedAuxiliaryBar
+      - action: snippet
+        contentPath: .demo/snippets/zoom.json
   - id: demo-mikcnn4s-vqx5
     title: Start AI
     steps:
@@ -104,6 +106,8 @@ demos:
       - action: cancelCopilotChat
       - action: executeVSCodeCommand
         command: workbench.action.toggleMaximizedAuxiliaryBar
+      - action: snippet
+        contentPath: .demo/snippets/zoomReset.json
       - action: closeCopilotChat
       - action: executeScript
         path: .demo/scripts/blur-control.cjs

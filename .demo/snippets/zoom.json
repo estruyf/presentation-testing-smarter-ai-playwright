@@ -1,0 +1,10 @@
+[
+  {
+    "action": "executeVSCodeCommand",
+    "command": "workbench.action.zoomIn"
+  },
+  {
+    "action": "executeVSCodeCommand",
+    "command": "workbench.action.zoomIn"
+  }
+]

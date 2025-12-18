@@ -7,6 +7,8 @@ demos:
       - action: openCopilotChat
       - action: executeVSCodeCommand
         command: workbench.action.toggleMaximizedAuxiliaryBar
+      - action: snippet
+        contentPath: .demo/snippets/zoom.json
   - id: demo-mikiuil2-ws7u
     title: Create the plan
     steps:
@@ -31,6 +33,8 @@ demos:
       - action: cancelCopilotChat
       - action: executeVSCodeCommand
         command: workbench.action.toggleMaximizedAuxiliaryBar
+      - action: snippet
+        contentPath: .demo/snippets/zoomReset.json
       - action: closeCopilotChat
       - action: executeScript
         path: .demo/scripts/blur-control.cjs
@@ -48,6 +52,8 @@ demos:
       - action: openCopilotChat
       - action: executeVSCodeCommand
         command: workbench.action.toggleMaximizedAuxiliaryBar
+      - action: snippet
+        contentPath: .demo/snippets/zoom.json
   - id: demo-mikixbzc-7grp
     title: Generate the tests
     steps:
@@ -72,6 +78,8 @@ demos:
       - action: cancelCopilotChat
       - action: executeVSCodeCommand
         command: workbench.action.toggleMaximizedAuxiliaryBar
+      - action: snippet
+        contentPath: .demo/snippets/zoomReset.json
       - action: closeCopilotChat
       - action: executeScript
         path: .demo/scripts/blur-control.cjs
@@ -131,6 +139,8 @@ demos:
       - action: openCopilotChat
       - action: executeVSCodeCommand
         command: workbench.action.toggleMaximizedAuxiliaryBar
+      - action: snippet
+        contentPath: .demo/snippets/zoom.json
   - id: demo-mikjmho8-py9r
     title: Fixing the tests
     steps:

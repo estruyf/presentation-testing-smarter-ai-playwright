@@ -7,6 +7,8 @@ demos:
       - action: openCopilotChat
       - action: executeVSCodeCommand
         command: workbench.action.toggleMaximizedAuxiliaryBar
+      - action: snippet
+        contentPath: .demo/snippets/zoom.json
   - id: demo-mikdt2yz-6umn
     title: Adding tests for API
     steps:
@@ -30,6 +32,8 @@ demos:
       - action: cancelCopilotChat
       - action: executeVSCodeCommand
         command: workbench.action.toggleMaximizedAuxiliaryBar
+      - action: snippet
+        contentPath: .demo/snippets/zoomReset.json
       - action: closeCopilotChat
       - action: executeScript
         path: .demo/scripts/blur-control.cjs

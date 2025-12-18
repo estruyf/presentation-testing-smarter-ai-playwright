@@ -8,6 +8,8 @@ demos:
       - action: cancelCopilotChat
       - action: executeVSCodeCommand
         command: workbench.action.toggleMaximizedAuxiliaryBar
+      - action: snippet
+        contentPath: .demo/snippets/zoomReset.json
       - action: closeCopilotChat
       - action: executeScript
         path: .demo/scripts/blur-control.cjs

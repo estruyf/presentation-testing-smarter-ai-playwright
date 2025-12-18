@@ -14,6 +14,8 @@ demos:
       - action: openCopilotChat
       - action: executeVSCodeCommand
         command: workbench.action.toggleMaximizedAuxiliaryBar
+      - action: snippet
+        contentPath: .demo/snippets/zoom.json
   - id: demo-mikd8d6k-37iy
     title: Create tests
     steps:
@@ -34,6 +36,8 @@ demos:
     steps:
       - action: cancelCopilotChat
       - action: closeCopilotChat
+      - action: snippet
+        contentPath: .demo/snippets/zoomReset.json
       - action: create
         path: tests/sticker-inventory.spec.ts
         contentPath: .demo/snapshots/ai-tests.ts
