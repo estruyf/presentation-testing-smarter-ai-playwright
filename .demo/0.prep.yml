@@ -41,39 +41,3 @@ demos:
     icons:
       start: pie-chart
       end: ''
-  - id: demo-mjbhwc2n-2dqp
-    title: Demo 3
-    steps:
-      - action: executeScript
-        path: .demo/scripts/blur-control.cjs
-        id: blur
-        command: node
-        args:
-          - 'on'
-          - Hi all
-      - action: waitForTimeout
-        timeout: 2000
-      - action: executeScript
-        path: .demo/scripts/blur-control.cjs
-        id: blur
-        command: node
-        args:
-          - 'on'
-          - How are you doing?
-      - action: waitForTimeout
-        timeout: 2000
-      - action: executeScript
-        path: .demo/scripts/blur-control.cjs
-        id: blur
-        command: node
-        args:
-          - 'on'
-          - This is initialized by Demo Time
-      - action: waitForTimeout
-        timeout: 2000
-      - action: executeScript
-        path: .demo/scripts/blur-control.cjs
-        id: blur
-        command: node
-        args:
-          - 'off'
