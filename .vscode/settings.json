@@ -11,7 +11,7 @@
   "demoTime.highlightBackground": "rgba(19, 142, 151, 0.2)",
   "demoTime.highlightOpacity": 0.5,
   "demoTime.highlightBlur": 2,
-  "editor.hover.enabled": false,
+  "editor.hover.enabled": "off",
   "demoTime.highlightZoomEnabled": 5,
   "demoTime.customWebComponents": [
     ".demo/components/loading.js"
