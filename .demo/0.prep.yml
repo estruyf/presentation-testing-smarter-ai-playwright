@@ -25,6 +25,8 @@ demos:
         insertTypingMode: character-by-character
       - action: executeVSCodeCommand
         command: notifications.toggleDoNotDisturbMode
+      - action: newCopilotChat
+      - action: closeCopilotChat
   - id: demo-mjba87os-g25p
     title: Start polls
     steps:
