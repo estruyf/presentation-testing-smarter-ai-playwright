@@ -15,6 +15,15 @@ demos:
         content: Add additional tests in the `tests/sticker-inventory.spec.ts` file to verify the API calls the website makes. Make sure to also include a test to check the experience what happens when the API call fails. use context7
         insertTypingSpeed: 5
       - action: pressEnter
+      - action: waitForTimeout
+        timeout: 5000
+      - action: executeScript
+        path: .demo/scripts/blur-control.cjs
+        id: blur
+        command: node
+        args:
+          - 'on'
+          - There we go...
   - title: Update inventory
     description: ''
     steps:
@@ -22,6 +31,12 @@ demos:
       - action: executeVSCodeCommand
         command: workbench.action.toggleMaximizedAuxiliaryBar
       - action: closeCopilotChat
+      - action: executeScript
+        path: .demo/scripts/blur-control.cjs
+        id: blur
+        command: node
+        args:
+          - 'off'
       - action: open
         path: /tests/sticker-inventory.spec.ts
       - action: applyPatch

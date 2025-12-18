@@ -9,6 +9,12 @@ demos:
       - action: executeVSCodeCommand
         command: workbench.action.toggleMaximizedAuxiliaryBar
       - action: closeCopilotChat
+      - action: executeScript
+        path: .demo/scripts/blur-control.cjs
+        id: blur
+        command: node
+        args:
+          - 'off'
       - action: setTheme
         theme: Demo Time Light (no italic)
       - action: openSlide
