@@ -6,7 +6,7 @@ demos:
     title: Show poll
     steps:
       - action: closeEngageTimePoll
-        pollId: d4drre
+        pollId: fmozi6
       - action: showEngageTimePoll
         pollId: fmozi6
   - title: Open Copilot Chat
