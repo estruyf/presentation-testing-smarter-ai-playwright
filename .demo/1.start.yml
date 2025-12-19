@@ -73,6 +73,13 @@ demos:
     icons:
       start: pie-chart
       end: ''
+  - title: Open chat
+    steps:
+      - action: openCopilotChat
+      - action: executeVSCodeCommand
+        command: workbench.action.toggleMaximizedAuxiliaryBar
+      - action: snippet
+        contentPath: .demo/snippets/zoom.json
   - id: demo-mikcnn4s-vqx5
     title: Start AI
     steps:
@@ -84,11 +91,30 @@ demos:
           Please add all the retrieved an created test IDs in a TypeScript constant file under `apps/website/src/constants/testIds.ts`. That way, it is easier to be reused in the E2E tests later.
         insertTypingSpeed: 5
       - action: pressEnter
+      - action: waitForTimeout
+        timeout: 5000
+      - action: executeScript
+        path: .demo/scripts/blur-control.cjs
+        id: blur
+        command: node
+        args:
+          - 'on'
+          - This can take a while...
   - id: demo-mikcqjhs-u9iv
     title: Show test IDs
     steps:
       - action: cancelCopilotChat
+      - action: executeVSCodeCommand
+        command: workbench.action.toggleMaximizedAuxiliaryBar
+      - action: snippet
+        contentPath: .demo/snippets/zoomReset.json
       - action: closeCopilotChat
+      - action: executeScript
+        path: .demo/scripts/blur-control.cjs
+        id: blur
+        command: node
+        args:
+          - 'off'
       - action: open
         path: apps/website/src/constants/testIds.ts
   - title: Highlight navigation

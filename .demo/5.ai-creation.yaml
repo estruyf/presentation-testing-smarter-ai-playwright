@@ -5,6 +5,10 @@ demos:
   - title: Open Copilot Chat
     steps:
       - action: openCopilotChat
+      - action: executeVSCodeCommand
+        command: workbench.action.toggleMaximizedAuxiliaryBar
+      - action: snippet
+        contentPath: .demo/snippets/zoom.json
   - id: demo-mikiuil2-ws7u
     title: Create the plan
     steps:
@@ -14,11 +18,30 @@ demos:
         content: Explore the `apps/website` app, and create a test plan for the basic inventory actions. Make sure to also include API tests and mock the APIs. Make sure to expect the unexpected like failing APIs.
         insertTypingSpeed: 5
       - action: pressEnter
+      - action: waitForTimeout
+        timeout: 5000
+      - action: executeScript
+        path: .demo/scripts/blur-control.cjs
+        id: blur
+        command: node
+        args:
+          - 'on'
+          - Got 30mins?
   - id: demo-mikivr21-n0jm
     title: Open the plan
     steps:
       - action: cancelCopilotChat
+      - action: executeVSCodeCommand
+        command: workbench.action.toggleMaximizedAuxiliaryBar
+      - action: snippet
+        contentPath: .demo/snippets/zoomReset.json
       - action: closeCopilotChat
+      - action: executeScript
+        path: .demo/scripts/blur-control.cjs
+        id: blur
+        command: node
+        args:
+          - 'off'
       - action: create
         path: sticker-inventory-test-plan.md
         contentPath: .demo/snapshots/sticker-inventory-test-plan.md
@@ -27,6 +50,10 @@ demos:
   - title: Open Copilot Chat
     steps:
       - action: openCopilotChat
+      - action: executeVSCodeCommand
+        command: workbench.action.toggleMaximizedAuxiliaryBar
+      - action: snippet
+        contentPath: .demo/snippets/zoom.json
   - id: demo-mikixbzc-7grp
     title: Generate the tests
     steps:
@@ -36,11 +63,30 @@ demos:
         content: Generate me the `### 1. UI Component Tests` tests for the sticker-inventory-test-plan.md test plan.
         insertTypingSpeed: 5
       - action: pressEnter
+      - action: waitForTimeout
+        timeout: 5000
+      - action: executeScript
+        path: .demo/scripts/blur-control.cjs
+        id: blur
+        command: node
+        args:
+          - 'on'
+          - Another 30mins?
   - id: demo-mikjdkma-ska3
     title: Copy over all tests
     steps:
       - action: cancelCopilotChat
+      - action: executeVSCodeCommand
+        command: workbench.action.toggleMaximizedAuxiliaryBar
+      - action: snippet
+        contentPath: .demo/snippets/zoomReset.json
       - action: closeCopilotChat
+      - action: executeScript
+        path: .demo/scripts/blur-control.cjs
+        id: blur
+        command: node
+        args:
+          - 'off'
       - action: openTerminal
         terminalId: copy-tests
       - action: waitForTimeout
@@ -91,6 +137,10 @@ demos:
       - action: executeVSCodeCommand
         command: workbench.action.terminal.toggleTerminal
       - action: openCopilotChat
+      - action: executeVSCodeCommand
+        command: workbench.action.toggleMaximizedAuxiliaryBar
+      - action: snippet
+        contentPath: .demo/snippets/zoom.json
   - id: demo-mikjmho8-py9r
     title: Fixing the tests
     steps:
@@ -100,3 +150,12 @@ demos:
         content: Fix the failing tests
         insertTypingSpeed: 5
       - action: pressEnter
+      - action: waitForTimeout
+        timeout: 5000
+      - action: executeScript
+        path: .demo/scripts/blur-control.cjs
+        id: blur
+        command: node
+        args:
+          - 'on'
+          - This shouldn't take long... 🤭

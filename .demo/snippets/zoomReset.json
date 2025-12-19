@@ -1,0 +1,6 @@
+[
+  {
+    "action": "executeVSCodeCommand",
+    "command": "workbench.action.zoomReset"
+  }
+]

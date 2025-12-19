@@ -91,3 +91,14 @@ layout: intro
   }
 </style>
 
+---
+layout: intro
+---
+
+# Raise your hand if you know the answer! 🙋‍♂️
+
+---
+layout: intro
+---
+
+# What is the name of the sticker shop application we used for the demos?

@@ -5,6 +5,10 @@ demos:
   - title: Open Copilot Chat
     steps:
       - action: openCopilotChat
+      - action: executeVSCodeCommand
+        command: workbench.action.toggleMaximizedAuxiliaryBar
+      - action: snippet
+        contentPath: .demo/snippets/zoom.json
   - id: demo-mikdt2yz-6umn
     title: Adding tests for API
     steps:
@@ -13,11 +17,30 @@ demos:
         content: Add additional tests in the `tests/sticker-inventory.spec.ts` file to verify the API calls the website makes. Make sure to also include a test to check the experience what happens when the API call fails. use context7
         insertTypingSpeed: 5
       - action: pressEnter
+      - action: waitForTimeout
+        timeout: 5000
+      - action: executeScript
+        path: .demo/scripts/blur-control.cjs
+        id: blur
+        command: node
+        args:
+          - 'on'
+          - There we go...
   - title: Update inventory
     description: ''
     steps:
       - action: cancelCopilotChat
+      - action: executeVSCodeCommand
+        command: workbench.action.toggleMaximizedAuxiliaryBar
+      - action: snippet
+        contentPath: .demo/snippets/zoomReset.json
       - action: closeCopilotChat
+      - action: executeScript
+        path: .demo/scripts/blur-control.cjs
+        id: blur
+        command: node
+        args:
+          - 'off'
       - action: open
         path: /tests/sticker-inventory.spec.ts
       - action: applyPatch
