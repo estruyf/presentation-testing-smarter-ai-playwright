@@ -2,91 +2,6 @@ title: Model Context Protocol (MCP)
 description: ''
 version: 2
 demos:
-  - id: demo-mike9bjx-1chl
-    title: MCP
-    steps:
-      - action: setTheme
-        theme: Demo Time Light (no italic)
-      - action: openSlide
-        path: .demo/slides/mcp.md
-    icons:
-      start: device-desktop
-      end: ''
-  - id: demo-mikf59o6-14fm
-    title: Create MCP config
-    steps:
-      - action: setTheme
-        theme: Demo Time Light (no italic)
-      - action: create
-        path: .vscode/mcp.json
-        contentPath: .demo/snapshots/mcp.json
-      - action: open
-        path: .vscode/mcp.json
-  - id: demo-milw3xax-xdau
-    title: Highlight config
-    steps:
-      - action: highlight
-        position: '3:8'
-        highlightWholeLine: true
-        path: .vscode/mcp.json
-  - id: demo-mikfyhlg-fvt7
-    title: Agent file
-    steps:
-      - action: open
-        path: .github/agents/playwright.md
-      - action: highlight
-        path: /.github/agents/playwright.md
-        position: '1:7'
-  - title: Open Copilot Chat
-    steps:
-      - action: openCopilotChat
-      - action: executeVSCodeCommand
-        command: workbench.action.toggleMaximizedAuxiliaryBar
-      - action: snippet
-        contentPath: .demo/snippets/zoom.json
-  - id: demo-mikfck7m-idge
-    title: Request Playwright MCP
-    steps:
-      - action: customCopilotChat
-        mode: Playwright
-      - action: typeText
-        insertTypingSpeed: 5
-        content: Navigate to the http://localhost:5173/ site, and take a screenshot from each sticker card you find on the homepage.
-      - action: pressEnter
-  - id: demo-miop0i3x-v7mf
-    title: Auth
-    steps:
-      - action: cancelCopilotChat
-      - action: executeVSCodeCommand
-        command: workbench.action.toggleMaximizedAuxiliaryBar
-      - action: snippet
-        contentPath: .demo/snippets/zoomReset.json
-      - action: closeCopilotChat
-      - action: setTheme
-        theme: Demo Time Light (no italic)
-      - action: openSlide
-        path: .demo/slides/auth.md
-    icons:
-      start: device-desktop
-      end: ''
-  - id: demo-milw5dbh-0wos
-    title: Show poll
-    steps:
-      - action: closeEngageTimePoll
-        pollId: uzzs99
-      - action: showEngageTimePoll
-        pollId: p8t97y
-    icons:
-      start: pie-chart
-      end: ''
-  - id: demo-mikg1666-5duc
-    title: Testing MCP
-    steps:
-      - action: openSlide
-        path: .demo/slides/mcp-testing.md
-    icons:
-      start: device-desktop
-      end: ''
   - id: demo-mikgjzq5-zgb4
     title: Create agents
     steps:
@@ -103,32 +18,86 @@ demos:
   - id: demo-mikgnty3-4jku
     title: Planner
     steps:
-      - action: closeTerminal
-        terminalId: playwright
-      - action: executeVSCodeCommand
-        command: workbench.action.terminal.focus
-      - action: executeVSCodeCommand
-        command: workbench.action.terminal.toggleTerminal
-      - action: create
-        path: .github/agents/playwright-test-planner.agent.md
-        contentPath: .demo/snapshots/playwright-test-planner.agent.md
       - action: open
         path: .github/agents/playwright-test-planner.agent.md
   - id: demo-mikgo3bu-z090
     title: Generator
     steps:
-      - action: create
-        path: .github/agents/playwright-test-generator.agent.md
-        contentPath: .demo/snapshots/playwright-test-generator.agent.md
       - action: open
         path: .github/agents/playwright-test-generator.agent.md
   - id: demo-mikgo2w0-h178
     title: Healer
     steps:
-      - action: create
-        path: .github/agents/playwright-test-healer.agent.md
-        contentPath: .demo/snapshots/playwright-test-healer.agent.md
       - action: open
         path: .github/agents/playwright-test-healer.agent.md
+  - title: Open Copilot Chat
+    steps:
+      - action: openCopilotChat
+      - action: executeVSCodeCommand
+        command: workbench.action.toggleMaximizedAuxiliaryBar
+      - action: snippet
+        contentPath: .demo/snippets/zoom.json
+  - title: Create the plan
+    steps:
+      - action: customCopilotChat
+        mode: playwright-test-planner
+      - action: typeText
+        content: Explore the `apps/website` app, and create a test plan for the basic inventory actions. Make sure to also include API tests and mock the APIs. Make sure to expect the unexpected like failing APIs.
+        insertTypingSpeed: 5
+      - action: pressEnter
+  - title: Open the plan
+    steps:
+      - action: cancelCopilotChat
+      - action: executeVSCodeCommand
+        command: workbench.action.toggleMaximizedAuxiliaryBar
+      - action: snippet
+        contentPath: .demo/snippets/zoomReset.json
+      - action: closeCopilotChat
+      - action: open
+        path: sticker-inventory-test-plan.md
+  - title: Open Copilot Chat
+    steps:
+      - action: openCopilotChat
+      - action: executeVSCodeCommand
+        command: workbench.action.toggleMaximizedAuxiliaryBar
+      - action: snippet
+        contentPath: .demo/snippets/zoom.json
+  - title: Generate the tests
+    steps:
+      - action: customCopilotChat
+        mode: playwright-test-generator
+      - action: typeText
+        content: Generate me the `1. UI Components and Layout` tests for the sticker-inventory-test-plan.md test plan.
+        insertTypingSpeed: 5
+      - action: pressEnter
+  - title: Show header navigation test
+    steps:
+      - action: cancelCopilotChat
+      - action: executeVSCodeCommand
+        command: workbench.action.toggleMaximizedAuxiliaryBar
+      - action: snippet
+        contentPath: .demo/snippets/zoomReset.json
+      - action: closeCopilotChat
+      - action: open
+        path: tests/ui-components/header-navigation.spec.ts
+  - title: Show hero section test
+    steps:
+      - action: open
+        path: tests/ui-components/hero-section.spec.ts
+  - title: Show inventory layout test
+    steps:
+      - action: open
+        path: tests/ui-components/inventory-layout.spec.ts
+  - id: scene-mmt6q301-1al2
+    title: Run tests
+    steps:
+      - action: openTerminal
+        terminalId: playwright
+      - action: waitForTimeout
+        timeout: 1000
+      - action: executeTerminalCommand
+        command: npx playwright test tests/ui-components/
+        insertTypingMode: character-by-character
+        terminalId: playwright
 engageTime:
   sessionId: iotpoo
